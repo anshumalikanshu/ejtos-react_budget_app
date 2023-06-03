@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Code to import Budget.js
 import Budget from './components/Budget';
-import AllocationForm from './components/';
+import AllocationForm from './components/AllocationForm';
 
 // Add code to import the other components here under
 

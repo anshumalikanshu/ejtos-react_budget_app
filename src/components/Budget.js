@@ -16,6 +16,13 @@ const Budget = () => {
     const totalExpenses = expenses.reduce((total, item)=> {
         return (total += (item.cost))
     }, 0)
+    const updateBudget_new = (newvalue)=>
+    {
+         
+        setBudget_new(previousState => {
+            return { ...previousState, budget: newvalue }
+          });
+    }    
 
     return (
         <div style={divStyle}>
@@ -25,9 +32,10 @@ const Budget = () => {
         required='required'
         type='number'
         id='budget_new'
+        step="10"
         value={budget_new}
         style={{size: 8, width: '100px'}}
-        onChange={(event)=> setBudget_new(event.target.value)} >
+        onChange={(event)=> updateBudget_new(event.target.value)} >
         </input>
 
         </span >
