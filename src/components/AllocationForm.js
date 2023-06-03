@@ -20,7 +20,11 @@ const AllocationForm = (props) => {
         console.log(" The Allocation can not exceed the remaining funds of ",currency," remaining = " , remaining," quantity = " , quantity , " action= ", action )
   
         if( (quantity > remaining) &&  (action === "Add")  )
-          {  alert(" The Allocation can not exceed the remaining funds of ",currency,remaining  )
+          {  
+              alert(" The Allocation can not exceed the remaining funds of " , currency , " " , remaining  )
+
+              console.log(" The Allocation can not exceed the remaining funds of ",currency," remaining = " , remaining," quantity = " , quantity , " action= ", action )
+  
     } else
     {
         if (action === "Reduce") {
